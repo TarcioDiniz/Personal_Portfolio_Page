@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <link rel="stylesheet" href="styles.css">
   <title>Teste</title>
@@ -26,8 +26,8 @@
 <!-- START WELCOME SECTION -->
 
 <section id="welcome-section" class="welcome-section">
-  <h1>Hey I am Mimic</h1>
-  <p>a web developer</p>
+  <h1 class="titulo-principal">Hey I am Tarcio</h1>
+  <p>a fullstack developer</p>
 </section>
 
 <!-- END WELCOME SECTION -->
@@ -38,57 +38,57 @@
   <h2 class="projects-section-header">These are some of my projects</h2>
 
   <div class="projects-grid">
-    <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project project-tile">
-      <img class="project-image" src="images/tribute.jpg" alt="project">
+    <a href="https://dev.fligpix.com" target="_blank" class="project project-tile">
+      <img class="project-image" src="images/img.png" alt="project">
       <p class="project-title">
         <span class="code">&lt;</span>
-        Tribute Page
+        FligPix
         <span class="code">/&gt;</span>
       </p>
     </a>
-    <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
-      <img class="project-image" src="images/random-quote-machine.png" alt="project">
+    <a href="https://dev.xama.pro" target="_blank" class="project project-tile">
+      <img class="project-image" src="images/img_1.png" alt="project">
       <p class="project-title">
         <span class="code">&lt;</span>
-        Random Quote Machine
+        Xama
         <span class="code">/&gt;</span>
       </p>
     </a>
-    <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
-      <img class="project-image" src="images/calc.png" alt="project">
+    <a href="https://github.com/TarcioDiniz/Password_Generator?tab=readme-ov-file" target="_blank" class="project project-tile">
+      <img class="project-image" src="images/img_2.png" alt="project">
       <p class="project-title">
         <span class="code">&lt;</span>
-        JavaScript Calculator
+        Password Generator
         <span class="code">/&gt;</span>
       </p>
     </a>
-    <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project project-tile">
-      <img class="project-image" src="images/map.jpg" alt="project">
+    <a href="https://github.com/TarcioDiniz/CROSSWORDS" target="_blank" class="project project-tile">
+      <img class="project-image" src="images/img_3.png" alt="project">
       <p class="project-title">
         <span class="code">&lt;</span>
-        Map Data Across the Globe
+        Crosswords with GPT-3.5
         <span class="code">/&gt;</span>
       </p>
     </a>
-    <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="project project-tile">
-      <img class="project-image" src="images/wiki.png" alt="project">
+    <a href="https://github.com/TarcioDiniz/Orgs" target="_blank" class="project project-tile">
+      <img class="project-image" src="images/img_4.png" alt="project">
       <p class="project-title">
         <span class="code">&lt;</span>
-        Wikipedia Viewer
+        Orgs
         <span class="code">/&gt;</span>
       </p>
     </a>
-    <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
-      <img class="project-image" src="images/tic-tac-toe.png" alt="project">
+    <a href="https://www.youtube.com/watch?v=yw_eeiX6wZU" target="_blank" class="project project-tile">
+      <img class="project-image" src="images/img_5.png" alt="project">
       <p class="project-title">
         <span class="code">&lt;</span>
-        Tic Tac Toe Game
+        Game virtual reality
         <span class="code">/&gt;</span>
       </p>
     </a>
   </div>
 
-  <a href="https://codepen.io/FreeCodeCamp/" class="btn btn-show-all" target="_blank">Show all<i
+  <a href="https://github.com/TarcioDiniz" class="btn btn-show-all" target="_blank">Show all<i
     class="fas fa-chevron-right"></i></a>
 </section>
 
@@ -130,6 +130,26 @@
 
 <!-- END FOOTER SECTION -->
 
+<script>
+  function typeWrite(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = ' ';
+    textoArray.forEach(function (letra, i) {
 
+      setTimeout(function () {
+        elemento.innerHTML += letra;
+      }, 75 * i)
+
+    });
+  }
+
+  const titulo = document.querySelector('.titulo-principal');
+  typeWrite(titulo);
+
+  setInterval(function() {
+    typeWrite(titulo);
+  }, 5000);
+
+</script>
 </body>
 </html>
